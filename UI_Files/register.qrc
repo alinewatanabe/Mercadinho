@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="Logo">
+    <file>Images/Logo.png</file>
+  </qresource>
+  <qresource prefix="newPrefix">
+    <file>keyboard.svg</file>
+    <file>keyboard_double_arrow_up.svg</file>
+  </qresource>
+</RCC>

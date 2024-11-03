@@ -1,0 +1,744 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1005</width>
+    <height>727</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1005</width>
+    <height>712</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QFrame" name="FEntS">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="1" column="2">
+        <widget class="QPushButton" name="BtnSLog">
+         <property name="minimumSize">
+          <size>
+           <width>317</width>
+           <height>45</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Poppins</family>
+           <pointsize>14</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+border-radius: 7px;
+background-color: rgb(110, 200, 220);
+color: white;
+}</string>
+         </property>
+         <property name="text">
+          <string>Entre sem Login</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QFrame" name="FCadSe">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_3"/>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QPushButton" name="BtnCad">
+         <property name="minimumSize">
+          <size>
+           <width>287</width>
+           <height>45</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Poppins</family>
+           <pointsize>14</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+border-radius: 7px;
+background-color: rgb(60, 160, 181);
+color: white;
+}</string>
+         </property>
+         <property name="text">
+          <string>Cadastre-se</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0" colspan="4">
+        <widget class="QFrame" name="fBtns">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QFrame" name="fLogo">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="QLabel" name="logo_home">
+             <property name="geometry">
+              <rect>
+               <x>12</x>
+               <y>12</y>
+               <width>80</width>
+               <height>80</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>80</width>
+               <height>80</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>80</width>
+               <height>80</height>
+              </size>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap>:/newPrefix/Images/Logo.png</pixmap>
+             </property>
+             <property name="scaledContents">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="fCenter">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout">
+             <item>
+              <widget class="QFrame" name="fnothing_3">
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>200</height>
+                </size>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QFrame" name="fCpftext">
+               <property name="minimumSize">
+                <size>
+                 <width>300</width>
+                 <height>70</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>60</height>
+                </size>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QGridLayout" name="gridLayout_3">
+                <item row="1" column="0">
+                 <widget class="QLabel" name="l_CPF">
+                  <property name="minimumSize">
+                   <size>
+                    <width>350</width>
+                    <height>50</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>10000</width>
+                    <height>10000</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Poppins</family>
+                    <pointsize>16</pointsize>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;Insira o seu CPF para login&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+              <widget class="QFrame" name="fDispC">
+               <property name="minimumSize">
+                <size>
+                 <width>300</width>
+                 <height>290</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>1000</width>
+                 <height>1000</height>
+                </size>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_2">
+                <item>
+                 <widget class="QTextBrowser" name="txt_CPF">
+                  <property name="minimumSize">
+                   <size>
+                    <width>334</width>
+                    <height>50</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>400</width>
+                    <height>55</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Poppins</family>
+                    <pointsize>16</pointsize>
+                   </font>
+                  </property>
+                  <property name="whatsThis">
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QTextBrowser{
+background-color: rgb(229, 233, 237);
+border-radius: 7px;
+border: 1px solid rgb(196, 205, 208);
+padding-top: 10px;
+}
+</string>
+                  </property>
+                  <property name="html">
+                   <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Poppins'; font-size:16pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:14pt;&quot;&gt;XXX.XXX.XXX-XX&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QFrame" name="fBtnsCpf">
+                  <property name="minimumSize">
+                   <size>
+                    <width>325</width>
+                    <height>320</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>650</width>
+                    <height>640</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QFrame { 
+   background-color: rgb(245, 245, 245);
+   border-radius: 7px;
+   border: 1px solid rgb(196, 205, 208);
+} </string>
+                  </property>
+                  <property name="frameShape">
+                   <enum>QFrame::StyledPanel</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QGridLayout" name="gridLayout_2">
+                   <item row="3" column="2">
+                    <widget class="QPushButton" name="btn_0">
+                     <property name="minimumSize">
+                      <size>
+                       <width>91</width>
+                       <height>51</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Poppins</family>
+                       <pointsize>14</pointsize>
+                      </font>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QPushButton{
+background-color: rgb(255, 255, 255);
+border-radius: 7px;
+border-styles: outset;
+border: 1px solid rgb(196, 205, 208);
+}</string>
+                     </property>
+                     <property name="text">
+                      <string>0</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="0" column="3">
+                    <widget class="QPushButton" name="btn_3">
+                     <property name="minimumSize">
+                      <size>
+                       <width>91</width>
+                       <height>51</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Poppins</family>
+                       <pointsize>14</pointsize>
+                       <weight>50</weight>
+                       <bold>false</bold>
+                      </font>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QPushButton{
+background-color: rgb(255, 255, 255);
+border-radius: 7px;
+border-styles: outset;
+border: 1px solid rgb(196, 205, 208);
+}</string>
+                     </property>
+                     <property name="text">
+                      <string>3</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="3" column="3">
+                    <widget class="QPushButton" name="btn_back">
+                     <property name="minimumSize">
+                      <size>
+                       <width>91</width>
+                       <height>51</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Poppins</family>
+                       <pointsize>14</pointsize>
+                      </font>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QPushButton{
+background-color: rgb(255, 255, 255);
+border-radius: 7px;
+border-styles: outset;
+border: 1px solid rgb(196, 205, 208);
+}</string>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="icon">
+                      <iconset>
+                       <normaloff>:/icons/backspace.svg</normaloff>:/icons/backspace.svg</iconset>
+                     </property>
+                     <property name="iconSize">
+                      <size>
+                       <width>25</width>
+                       <height>25</height>
+                      </size>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="2" column="0">
+                    <widget class="QPushButton" name="btn_7">
+                     <property name="minimumSize">
+                      <size>
+                       <width>91</width>
+                       <height>51</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Poppins</family>
+                       <pointsize>14</pointsize>
+                      </font>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QPushButton{
+background-color: rgb(255, 255, 255);
+border-radius: 7px;
+border-styles: outset;
+border: 1px solid rgb(196, 205, 208);
+}</string>
+                     </property>
+                     <property name="text">
+                      <string>7</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="2" column="2">
+                    <widget class="QPushButton" name="btn_8">
+                     <property name="minimumSize">
+                      <size>
+                       <width>91</width>
+                       <height>51</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Poppins</family>
+                       <pointsize>14</pointsize>
+                      </font>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QPushButton{
+background-color: rgb(255, 255, 255);
+border-radius: 7px;
+border-styles: outset;
+border: 1px solid rgb(196, 205, 208);
+}</string>
+                     </property>
+                     <property name="text">
+                      <string>8</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="3">
+                    <widget class="QPushButton" name="btn_6">
+                     <property name="minimumSize">
+                      <size>
+                       <width>91</width>
+                       <height>51</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Poppins</family>
+                       <pointsize>14</pointsize>
+                      </font>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QPushButton{
+background-color: rgb(255, 255, 255);
+border-radius: 7px;
+border-styles: outset;
+border: 1px solid rgb(196, 205, 208);
+}</string>
+                     </property>
+                     <property name="text">
+                      <string>6</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="2" column="3">
+                    <widget class="QPushButton" name="btn_9">
+                     <property name="minimumSize">
+                      <size>
+                       <width>91</width>
+                       <height>51</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Poppins</family>
+                       <pointsize>14</pointsize>
+                      </font>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QPushButton{
+background-color: rgb(255, 255, 255);
+border-radius: 7px;
+border-styles: outset;
+border: 1px solid rgb(196, 205, 208);
+}</string>
+                     </property>
+                     <property name="text">
+                      <string>9</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="0" column="0">
+                    <widget class="QPushButton" name="btn_1">
+                     <property name="minimumSize">
+                      <size>
+                       <width>91</width>
+                       <height>51</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Poppins</family>
+                       <pointsize>14</pointsize>
+                      </font>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QPushButton{
+background-color: rgb(255, 255, 255);
+border-radius: 7px;
+border-styles: outset;
+border: 1px solid rgb(196, 205, 208);
+}</string>
+                     </property>
+                     <property name="text">
+                      <string>1</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="2">
+                    <widget class="QPushButton" name="btn_5">
+                     <property name="minimumSize">
+                      <size>
+                       <width>91</width>
+                       <height>51</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Poppins</family>
+                       <pointsize>14</pointsize>
+                      </font>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QPushButton{
+background-color: rgb(255, 255, 255);
+border-radius: 7px;
+border-styles: outset;
+border: 1px solid rgb(196, 205, 208);
+}</string>
+                     </property>
+                     <property name="text">
+                      <string>5</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="3" column="0">
+                    <widget class="QPushButton" name="btn_">
+                     <property name="minimumSize">
+                      <size>
+                       <width>91</width>
+                       <height>51</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Poppins</family>
+                       <pointsize>14</pointsize>
+                      </font>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QPushButton{
+background-color: rgb(255, 255, 255);
+border-radius: 7px;
+border-styles: outset;
+border: 1px solid rgb(196, 205, 208);
+}</string>
+                     </property>
+                     <property name="text">
+                      <string>Limpar</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="0">
+                    <widget class="QPushButton" name="btn_4">
+                     <property name="minimumSize">
+                      <size>
+                       <width>91</width>
+                       <height>51</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Poppins</family>
+                       <pointsize>14</pointsize>
+                      </font>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QPushButton{
+background-color: rgb(255, 255, 255);
+border-radius: 7px;
+border-styles: outset;
+border: 1px solid rgb(196, 205, 208);
+}</string>
+                     </property>
+                     <property name="text">
+                      <string>4</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="0" column="2">
+                    <widget class="QPushButton" name="btn_2">
+                     <property name="minimumSize">
+                      <size>
+                       <width>91</width>
+                       <height>51</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Poppins</family>
+                       <pointsize>14</pointsize>
+                      </font>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QPushButton{
+background-color: rgb(255, 255, 255);
+border-radius: 7px;
+border-styles: outset;
+border: 1px solid rgb(196, 205, 208);
+}</string>
+                     </property>
+                     <property name="text">
+                      <string>2</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QFrame" name="fnothing_2">
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>160</height>
+                </size>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="fnothing">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>600</height>
+             </size>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QPushButton" name="btn_entrar">
+         <property name="minimumSize">
+          <size>
+           <width>287</width>
+           <height>45</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Poppins</family>
+           <pointsize>14</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+border-radius: 7px;
+background-color: rgb(60, 160, 181);
+color: white
+}</string>
+         </property>
+         <property name="text">
+          <string>Entrar</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../icons/icons.qrc"/>
+  <include location="logo.qrc"/>
+ </resources>
+ <connections/>
+</ui>

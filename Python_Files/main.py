@@ -94,7 +94,6 @@ class Main(QtWidgets.QMainWindow):
         self.set_window_position(self.window_home, self.window_register)
         self.window_home.hide()
         self.clear_data_fields()
-        self.table_inventory()
         if self.window_home.isMaximized():
             self.window_register.showMaximized()
         else:

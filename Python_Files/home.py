@@ -193,7 +193,7 @@ class Ui_MainWindow(object):
 "border-styles: outset;\n"
 "border: 1px solid rgb(196, 205, 208);\n"
 "}")
-        self.btn_back.setText("")
+        self.btn_back.setText("Back")
         icon = QtGui.QIcon()
         icon.addPixmap(QtGui.QPixmap("icons/backspace.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.btn_back.setIcon(icon)

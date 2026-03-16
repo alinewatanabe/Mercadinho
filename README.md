@@ -87,7 +87,7 @@ Mercadinho is a desktop-based Point of Sale (POS) system designed for small mark
 
 ## Contact
 For questions or support, please contact the project maintainer:
-- **Email**: linenwatanabe@gmail.com
+- **Email**: [linenwatanabe@gmail.com](mailto:linenwatanabe@gmail.com)
 - **GitHub**: [alinewatanabe](https://github.com/alinewatanabe)
 
 ---

@@ -1,49 +1,95 @@
-# Mercadinho Project Documentation
+# Mercadinho - RFID Point of Sale System
 
-## Introduction
-Welcome to the Mercadinho project! This project aims to create a comprehensive online marketplace that connects local buyers with sellers, facilitating easy access to a variety of goods and services.
+## Overview
+
+Mercadinho is a desktop-based Point of Sale (POS) system designed for small markets and retail stores. It features integrated RFID technology for fast and efficient product checkout, comprehensive inventory management, and customer registration capabilities. Built with PyQt5, it provides an intuitive graphical interface for seamless retail operations.
 
 ## Features
-- **User Registration and Login**: Users can create accounts and log in to access their personalized dashboard.
-- **Product Listings**: Sellers can list their products with descriptions, prices, and images.
-- **Search and Filter**: Users can search for products and apply filters to find what they're looking for quickly.
-- **Shopping Cart**: Users can add products to their shopping cart and purchase them in a streamlined process.
-- **Order Management**: Sellers can manage their orders, including tracking and fulfillment.
+
+- **RFID-Based Checkout**: Instantly read product information using RFID technology for quick transactions
+- **Customer Management**: Register and manage customer information with CPF and phone number storage
+- **Inventory Management**: Track product stock levels, manage product information, and receive real-time inventory updates
+- **Self-Checkout**: Enable customers to scan items independently during checkout
+- **Secure Database**: SQLite database backend for reliable data persistence
+- **Multi-Window Interface**: Organized UI with separate screens for home, registration, inventory, and checkout
+
+## Technologies
+
+- **Framework**: PyQt5 - Modern GUI framework for desktop applications
+- **Database**: SQLite3 - Lightweight, file-based database
+- **RFID Reader**: MFRC522 - Contactless RFID card reader support
+- **Data Processing**: Pandas, NumPy - Data analysis and manipulation
+- **Communication**: PySerial - Serial port communication for hardware devices
 
 ## Installation
-To install the Mercadinho project locally, follow these steps:
+
+### Prerequisites
+- Python 3.8 or higher
+- RFID Reader (MFRC522 compatible)
+- Serial connection capability for hardware communication
+
+### Setup Instructions
+
 1. Clone the repository:
    ```bash
    git clone https://github.com/alinewatanabe/Mercadinho.git
-   ```
-2. Navigate to the project directory:
-   ```bash
    cd Mercadinho
    ```
-3. Install dependencies:
+
+2. Create a Python virtual environment:
    ```bash
-   npm install
-   ```
-4. Start the development server:
-   ```bash
-   npm start
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
    ```
 
-## Technologies Used
-- **Frontend**: React.js
-- **Backend**: Node.js with Express
-- **Database**: MongoDB
+3. Install requirements:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-## Contributing
-We welcome contributions to the Mercadinho project! Please follow these steps to contribute:
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix.
-3. Make your changes and commit them.
-4. Push your branch to your forked repository.
-5. Submit a pull request with a detailed description of your changes.
+4. Run the application:
+   ```bash
+   python Python_Files/main.py
+   ```
 
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+## Project Structure
+
+| Directory/File | Purpose |
+|---|---|
+| **Python_Files/** | Core application modules and logic |
+| main.py | Application entry point and main window controller |
+| database.py | SQLite database operations and queries |
+| home.py | Home screen interface and navigation |
+| register.py | Customer registration module |
+| inventory.py | Inventory management and product tracking |
+| self_checkout.py | Self-checkout interface for customers |
+| stand_by.py | Standby/screensaver display screen |
+| RFID.py | RFID reader thread and communication |
+| **UI_Files/** | Qt Designer UI definition files (.ui) |
+| **icons/** | Application icons and resources (.qrc) |
+| **Doc_Files/** | Documentation, presentations, and media assets |
+| **requirements.txt** | Python package dependencies and versions |
+| **README.md** | Project documentation |
+
+## Usage
+
+1. **Launch the Application**: Run `main.py` to start the POS system
+2. **Home Screen**: Choose between Customer Registration or Checkout
+3. **Customer Registration**: Register new customers or existing customers login
+4. **Checkout Process**: Use RFID scanner to select items and complete purchase
+5. **Inventory Management**: Access the inventory screen to manage product catalog
+
+## Hardware Requirements
+
+- RFID Reader: MFRC522-compatible reader
+- Serial Port: For RFID reader communication
+- Display: Minimum 1024x768 resolution recommended
 
 ## Contact
-For any inquiries, please contact the project maintainer at alinewatanabe@example.com.
+For questions or support, please contact the project maintainer:
+- **Email**: linenwatanabe@gmail.com
+- **GitHub**: [alinewatanabe](https://github.com/alinewatanabe)
+
+---
+
+**Note**: This is a desktop application designed for local retail operations. For online marketplace functionality, please refer to alternative solutions.
